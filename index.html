@@ -1,46 +1,65 @@
 <!DOCTYPE html>
 <html>
-<style>
-  body {
-    background: linear-gradient(ligthCyan, auquamarine) fixed;
-  }
-  header, p {
-    font-size: 2em;
-    color:  blue;
-    padding: 10%;
-    background: linear-gradient(ligthCyan, auquamarine) fixed;
-  }
-  #navbar {
-    position: sticky;
-    top: 0;
-  }
-  .flex-container {
-    display: flex;
-    padding-left: 10%;
-    margin-top: 10%;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-  }
-  .flex-container > nav {
-    display: flex;
-    flex-direction: row;
-  }
-  li {
-    list-style-type: none;
-    margin-right: 20px;
-  }
-</style>
-  <div id="navbar" class="flex-container">
-   <nav>
-     <li><a href="#">jump</a></li>
-   </nav>
-   <nav>
-     <li><a href="#">higher</a></li>
-   </nav>
-  </div>
-    <header>This is my header</header>
-  <p>Gotta see it to believe it!</p>
-<script>
-  alert("Feeling good!");
-</script>
+  <style>
+    body {
+      background: ligthSeaGreen;
+      font-family: 'Quicksand', sans-serif;
+    }
+    a {
+      color: seaGreen;
+      text-decoration: none;
+      font-size: 15px;
+    }
+    a:hover {
+      color: black;
+    }
+    .item1 { 
+      grid-area: header;
+    }
+    .item2 { 
+      grid-area: menu; 
+    }
+    .item3 { 
+      grid-area: main; 
+    }
+    .item4 { 
+      grid-area: footer; 
+    }
+    .grid-container {
+      display: grid;
+      grid-template-areas:
+        'header header header header header header'
+        'menu menu menu main main main'
+        'footer footer footer footer footer footer';
+      grid-gap: 10px;
+      background: ligthSeaGreen;
+      min-height: 97vh;
+    }
+    .grid-container > div {
+      background-image: linear-gradient(white, lavender);
+      text-align: center;
+      padding: 5px;
+      font-size: 25px;
+      border-left: 1px solid lavender;
+      border-right: 1px solid lavender;
+      border-radius: 10px;
+    }
+    #image {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: auto;
+      border-radius: 10px;
+    }
+  </style>
+  <body>
+    <div id="main" class="grid-container">
+      <div class="item1"><h3 id="title">A tribute to Bas Rutten</h3></div>
+      <div id="img-div" class="item2"><img id="image" src="https://cdn.mmanews.com/wp-content/uploads/2018/03/oie_JKHqPTLckDIl-696x392.jpg" alt="Bas Rutten"/><a href="https://www.mmanews.com/bas-rutten-breaks-down-ufc-223s-two-title-fights-exclusive/" target="_blank">image source</a><p id="img-caption">Bas being Bas</p></div>
+      <div id="tribute-info" class="item3">A true mixed martial arts (MMA) pioneer, UFC heavyweight champion, Hall of Famer, and three-time King Of Pancrase, Bas Rutten enjoyed a storied career in the sport before moving on to commentate for the legendary PRIDE organization in its heyday.
+
+He’s also renowned for being one of the most colorful, charismatic fighters ever to compete in either the ring or the cage.<br><a href="https://www.lowkickmma.com/10-insane-stories-about-mma-legend-bas-rutten/" target="_blank">source</a></div>  
+      <div class="item4"><a id="tribute-link" href="https://en.wikipedia.org/wiki/Bas_Rutten" target="_blank">Read more here</a></div>
+    </div>
+  </body>
 </html>
