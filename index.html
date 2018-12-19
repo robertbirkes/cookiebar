@@ -63,3 +63,52 @@ He’s also renowned for being one of the most colorful, charismatic fighters ev
     </div>
   </body>
 </html>
+
+
+<style>
+  body {
+    background-color: lightblue;
+  }
+  h1, p, div{
+    text-align: center;
+  }
+  input {
+    font-size: 1em;
+    outline: none;
+  }
+  input:invalid {
+    border: 2px solid orange;
+  }
+  input:valid {
+    border: 2px solid black;
+  }
+</style>
+
+<h1 id="title">Survey</h1>
+<p id="description">It's a survey</p>
+<div id="main" class="container-fluid">
+  <form id="survey-form">
+    <label id="name-label" for="Name">*Name:</label>
+    <input id="name" type="text" placeholder="Name" required></input><br><br>
+    <label id="email-label" for="Email">*Email:</label>
+    <input id="email" type="email" placeholder="Email" required></input><br><br>
+    <label id="number-label" for="Number">*Age:</label>
+    <input id="number" type="number" placeholder="Age" required min="18" max="120"></input><br><br>Choose one
+<select id="dropdown">
+  <option value="this one?">This one</option>
+  <option value="no this one">No this one</option>
+</select><br><br>Make up your mind already<br>
+<input type="radio" name="choose" value="are you sure?">Are you sure?</input><br>
+<input type="radio" name="choose" value="really">Really?</input><br><br>How will you feel when this is over?<br>Relieved
+<input type="checkbox" value="relieved"></input><br>Ecstatic
+<input type="checkbox" value="ecstatic"></input><br>Over joyed
+<input type="checkbox" value="over joyed"></input><br><br>Tell me more<br>
+<textarea name="comment" value="comment" placeholder=" Right here!" rows="4" cols="30"></textarea><br><br>
+<button id="submit" type="submit" onclick="myFunc()">Submit</button>
+  </form>
+</div>
+<script>
+  function myFunc() {
+    document.getElementById("survey-form").submit();
+  }
+</script>
