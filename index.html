@@ -96,6 +96,8 @@ He’s also renowned for being one of the most colorful, charismatic fighters ev
 <style>
   body {
     background-color: lightblue;
+  }
+  #survDiv {
     min-height: 97vh;
   }
   h1, p, div{
@@ -112,7 +114,7 @@ He’s also renowned for being one of the most colorful, charismatic fighters ev
     border: 2px solid black;
   }
 </style>
-<body>
+<div id="survDiv">
 <h1 id="title">Survey</h1>
 <p id="description">It's a survey</p>
 <div id="main" class="container-fluid">
@@ -136,7 +138,7 @@ He’s also renowned for being one of the most colorful, charismatic fighters ev
 <button id="submit" type="submit" onclick="myFunc()">Submit</button><br><br>
   </form>
 </div>
-</body>
+</div>
 <script>
   function myFunc() {
     document.getElementById("survey-form").submit();
