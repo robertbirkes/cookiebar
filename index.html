@@ -96,7 +96,7 @@ He’s also renowned for being one of the most colorful, charismatic fighters ev
 <style>
   body {
     background-color: lightblue;
-    min-height: 100vh;
+    min-height: 97vh;
   }
   h1, p, div{
     text-align: center;
@@ -112,6 +112,7 @@ He’s also renowned for being one of the most colorful, charismatic fighters ev
     border: 2px solid black;
   }
 </style>
+<body>
 <h1 id="title">Survey</h1>
 <p id="description">It's a survey</p>
 <div id="main" class="container-fluid">
@@ -132,9 +133,10 @@ He’s also renowned for being one of the most colorful, charismatic fighters ev
 <input type="checkbox" value="ecstatic"></input><br>Over joyed
 <input type="checkbox" value="over joyed"></input><br><br>Tell me more<br>
 <textarea name="comment" value="comment" placeholder=" Right here!" rows="4" cols="30"></textarea><br><br>
-<button id="submit" type="submit" onclick="myFunc()">Submit</button>
+<button id="submit" type="submit" onclick="myFunc()">Submit</button><br><br>
   </form>
 </div>
+</body>
 <script>
   function myFunc() {
     document.getElementById("survey-form").submit();
