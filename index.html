@@ -1,6 +1,30 @@
 <!DOCTYPE html>
 <html>
   <style>
+#top, #bottom, #left, #right {
+	background: blueViolet;
+	position: fixed;
+}
+#left, #right {
+  top: 0; bottom: 0;
+	width: 10px;
+}
+#left { 
+  left: 0; 
+}
+#right { 
+  right: 0;
+}
+#top, #bottom {
+	left: 0; right: 0;
+	height: 10px;
+}
+#top { 
+  top: 0; 
+}
+#bottom { 
+  bottom: 0; 
+}
     body {
       background: ligthSeaGreen;
       font-family: 'Quicksand', sans-serif;
@@ -53,6 +77,10 @@
     }
   </style>
   <body>
+    <div id="top"></div>
+    <div id="right"></div>
+    <div id="bottom"></div>
+    <div id="left"></div>
     <div id="main" class="grid-container">
       <div class="item1"><h3 id="title">A tribute to Bas Rutten</h3></div>
       <div id="img-div" class="item2"><img id="image" src="https://cdn.mmanews.com/wp-content/uploads/2018/03/oie_JKHqPTLckDIl-696x392.jpg" alt="Bas Rutten"/><a href="https://www.mmanews.com/bas-rutten-breaks-down-ufc-223s-two-title-fights-exclusive/" target="_blank">image source</a><p id="img-caption">Bas being Bas</p></div>
