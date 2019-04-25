@@ -1,259 +1,63 @@
-<!DOCTYPE html>
-<html>
+<header id="header">
+  <nav id="nav-bar">
+    <ul>
+      <li><a class="nav-link" href="#header">Home</a></li>
+      <li><a class="nav-link" href="#video">About</a></li>
+      <li><a class="nav-link" href="#form">Contact</a></li>
+    </ul>
+  </nav>
+    <img id="header-img" src="http://www.phoenixrealestateguy.com/wp-content/uploads/2009/06/wp10582-thumb.jpg" alt="Puppies and a bunny."/>
+  <p>Puppies & Bunnies<br>since 1981</p>
+</header>  
   <div class="flex-container">
-    <nav id="navbar">
-      <li><a href="#space"><b>Welcome<b></a></li>
-      <li><a href="#projects">Projects</a></li>
-    </nav> 
-  </div>  
-  <div class="flex-container">
-  <div id="space"></div>
-    <div id="welcome-section">
-      <h1>Robert Anthony</h1>
-      <img src="https://avatars0.githubusercontent.com/u/25608120" width="40%"/>
-      <p><b>Welcome to my FreeCodeCamp portfolio page.<br> Web developement is very rewarding for me,<br>I'm looking forward to a long career and continued education.<br> <b></p>
-<a href="https://www.freecodecamp.org/robertbirkes" target="_blank" id="profile-link">See my profile here</a>
+    <div id="div1">
+      <p>We provide only top-notch Puppies & Bunnies for you to enjoy.</p>
+      <iframe id="video" width="550px" height="450px"
+        <source src="https://www.youtube.com/embed/05w7vsqhJBk?controls=1">
+      </iframe>
     </div>
-  <div id="projects">
-    <h2 class="project-tile">My favorite work in progress</h2>
-    <a class="p-links" href="https://codepen.io/RobertAnthony/full/GPZLem" target="_blank">
-      <img alt="Generic App image." src="https://scontent-icn1-1.xx.fbcdn.net/v/t1.0-9/48392477_358983931326877_2767350709891366912_n.png?_nc_cat=103&amp;_nc_ht=scontent-icn1-1.xx&amp;oh=556d52bdf96805d69faec617a829ffa9&amp;oe=5C9183AC" width="100%"></img>
-    </a>
-    <p>Language learning vocabulary tool</p>
-          <h2>FreeCodeCamp Tribute page</h2>
-    <a class="p-links" href="https://codepen.io/RobertAnthony/full/OrXxEw" target="_blank">
-      <img alt="Generic App image." src="https://scontent-icn1-1.xx.fbcdn.net/v/t1.0-9/48379224_359154227976514_737428232407613440_n.png?_nc_cat=106&amp;_nc_ht=scontent-icn1-1.xx&amp;oh=0cc28195cd255d6414f5b9cd4609f376&amp;oe=5CA0FBE5" width="100%"></img>
-    </a>
-    <p></p>
-    <h2>FreeCodeCamp Technical documentation page</h2>
-    <a class="p-links" href="https://codepen.io/RobertAnthony/full/JwoeNj" target="_blank">
-      <img alt="Generic App image." src="https://scontent-icn1-1.xx.fbcdn.net/v/t1.0-9/48350149_359006441324626_4093242113855062016_n.png?_nc_cat=101&amp;_nc_ht=scontent-icn1-1.xx&amp;oh=67472d3b03e44a6c6b42da680580e9ed&amp;oe=5CA1F300" width="100%"></img>
-    </a>
-    <p></p>
-    <h2>FreeCodeCamp Survey form</h2>
-    <a class="p-links" href="https://codepen.io/RobertAnthony/full/mQZbPM" target="_blank">
-      <img alt="Generic App image." src="https://scontent-icn1-1.xx.fbcdn.net/v/t1.0-9/48380303_359006437991293_1003262480119496704_n.png?_nc_cat=104&amp;_nc_ht=scontent-icn1-1.xx&amp;oh=76cc8a84fea6c98059ff013954c7b317&amp;oe=5CD94EF7" width="100%"></img>
-    </a>
-    <p></p>
-    <a class="p-links" href="https://codepen.io/RobertAnthony/full/EGxPEo" target="_blank">See more here</a><br><br>
+  <div id="div2"><p>To recieve more information please enter your Email.
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <input name="email" id="email" type="email" placeholder="Enter Email Here" required/>
+      <input id="submit" type="submit"/>
+    </form>
   </div>
-  </div>
-</html>
+</div>
 <style>
   body {
-    
-  }
-  a {
-    color: maroon;
+    background-color: lightcoral;
   }
   img {
-    border-radius: 5px;
-    border: 2px solid maroon;
+    max-width: 25%;
+    height: auto;
+    border-radius: 5%;
+  }
+  @media (max-width: 600px) {
+    img {
+      border-radius: 50%;
+    }
   }
   .flex-container {
     display: flex;
-    background-image: linear-gradient(cornsilk, maroon);  
-    padding-left: 10%;
-    margin-top: 5%;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+    flex-direction: column;
   }
-  .flex-container > nav {
-    display: flex;
-    flex-direction: row;
-  }
-  @media only screen and (max-width: 850px) {
-    .flex-container {
-      margin-top: 10%;
-    }
-  }
-  #welcome-section {
-    min-height: 100vh;
-  }
-  #projects {
-    margin-top: 10%;
-    min-height: 100vh;
-    font-size: 1.05em;
-    max-width: 50vh;
-  }
-  @media only screen and (max-width: 850px) {
-    #projects {
-      padding-top: 25%;
-    }
-  }
-  li {
-    list-style-type: none;
-    margin-right: 20px;
-  }
-  .p-links {
-    color: cornsilk;
-  }
-  #navbar {
-    position: fixed;
-    top: 0;
-    left: 40%;
-    right: 60%;
-    padding: 20px;
-    background: none;
-  }
-  @media only screen and (max-width: 850px) {
-    #navbar {
-      left: 15%;
-    }
-  }
-  @media only screen and (max-width: 850px) {
-    #space {
-      min-height: 3vh;
-    }
-  }
-</style>
-
-
-
-<!DOCTYPE html>
-<html>
-  <style>
-#top, #bottom, #left, #right {
-	background: blueViolet;
-	position: fixed;
-}
-#left, #right {
-  top: 0; bottom: 0;
-	width: 10px;
-}
-#left { 
-  left: 0; 
-}
-#right { 
-  right: 0;
-}
-#top, #bottom {
-	left: 0; right: 0;
-	height: 10px;
-}
-#top { 
-  top: 0; 
-}
-#bottom { 
-  bottom: 0; 
-}
-    body {
-      background: ligthSeaGreen;
-      font-family: 'Quicksand', sans-serif;
-    }
-    a {
-      color: seaGreen;
-      text-decoration: none;
-      font-size: 15px;
-    }
-    a:hover {
-      color: black;
-    }
-    .item1 { 
-      grid-area: header;
-    }
-    .item2 { 
-      grid-area: menu; 
-    }
-    .item3 { 
-      grid-area: main; 
-    }
-    .item4 { 
-      grid-area: footer; 
-    }
-    .grid-container {
-      display: grid;
-      grid-template-areas:
-        'header header header header header header'
-        'menu menu menu main main main'
-        'footer footer footer footer footer footer';
-      grid-gap: 10px;
-      background: ligthSeaGreen;
-      min-height: 97vh;
-    }
-    .grid-container > div {
-      background-image: linear-gradient(white, lavender);
-      text-align: center;
-      padding: 5px;
-      font-size: 25px;
-      border-left: 1px solid lavender;
-      border-right: 1px solid lavender;
-      border-radius: 10px;
-    }
-    #image {
-      display: block;
-      max-width: 100%;
-      height: auto;
-      margin: auto;
-      border-radius: 10px;
-    }
-  </style>
-  <body>
-    <div id="top"></div>
-    <div id="right"></div>
-    <div id="bottom"></div>
-    <div id="left"></div>
-    <div id="main" class="grid-container">
-      <div class="item1"><h3 id="title">A tribute to Bas Rutten</h3></div>
-      <div id="img-div" class="item2"><img id="image" src="https://cdn.mmanews.com/wp-content/uploads/2018/03/oie_JKHqPTLckDIl-696x392.jpg" alt="Bas Rutten"/><a href="https://www.mmanews.com/bas-rutten-breaks-down-ufc-223s-two-title-fights-exclusive/" target="_blank">image source</a><p id="img-caption">Bas being Bas</p></div>
-      <div id="tribute-info" class="item3">A true mixed martial arts (MMA) pioneer, UFC heavyweight champion, Hall of Famer, and three-time King Of Pancrase, Bas Rutten enjoyed a storied career in the sport before moving on to commentate for the legendary PRIDE organization in its heyday.
-
-He’s also renowned for being one of the most colorful, charismatic fighters ever to compete in either the ring or the cage.<br><a href="https://www.lowkickmma.com/10-insane-stories-about-mma-legend-bas-rutten/" target="_blank">source</a></div>  
-      <div class="item4"><a id="tribute-link" href="https://en.wikipedia.org/wiki/Bas_Rutten" target="_blank">Read more here</a></div>
-    </div>
-  </body>
-</html>
-
-
-<style>
-  body {
-    background-color: lightblue;
-    padding: 5px;
-  }
-  #survDiv {
-    min-height: 97vh;
-  }
-  h1, p, div{
-    text-align: center;
-  }
-  input {
+  .flex-container > div {
+    margin: 10px 33% 10px 33%;
     font-size: 1em;
-    outline: none;
   }
-  input:invalid {
-    border: 2px solid orange;
+  header {
+    top: 0;
+    position: fixed;
+    display: inline;
+    justify-content: space-around;
+    padding: 10px;
   }
-  input:valid {
-    border: 2px solid black;
+  li, ul, nav {
+    list-style-type: none;
+    font-size: 1.1em;
+    display: inherit;
+  }
+  #div1 {
+    margin-top: 200px;
   }
 </style>
-<div id="survDiv"><br><br>
-<h1 id="title">Survey</h1>
-<p id="description">It's a survey</p>
-<div id="main" class="container-fluid">
-  <form id="survey-form">
-    <label id="name-label" for="Name">*Name:</label>
-    <input id="name" type="text" placeholder="Name" required></input><br><br>
-    <label id="email-label" for="Email">*Email:</label>
-    <input id="email" type="email" placeholder="Email" required></input><br><br>
-    <label id="number-label" for="Number">*Age:</label>
-    <input id="number" type="number" placeholder="Age" required min="18" max="120"></input><br><br>Choose one
-<select id="dropdown">
-  <option value="this one?">This one</option>
-  <option value="no this one">No this one</option>
-</select><br><br>Make up your mind already<br>
-<input type="radio" name="choose" value="are you sure?">Are you sure?</input><br>
-<input type="radio" name="choose" value="really">Really?</input><br><br>How will you feel when this is over?<br>Relieved
-<input type="checkbox" value="relieved"></input><br>Ecstatic
-<input type="checkbox" value="ecstatic"></input><br>Over joyed
-<input type="checkbox" value="over joyed"></input><br><br>Tell me more<br>
-<textarea name="comment" value="comment" placeholder=" Right here!" rows="4" cols="30"></textarea><br><br>
-<button id="submit" type="submit" onclick="myFunc()">Submit</button><br><br>
-  </form>
-</div>
-</div>
-<script>
-  function myFunc() {
-    document.getElementById("survey-form").submit();
-  }
-</script>
