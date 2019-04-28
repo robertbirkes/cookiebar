@@ -9,9 +9,9 @@
   <div class="flex-container">
   <div id="space"></div>
     <div id="welcome-section">
-      <h1>쿠키빠</h1>
-      <img class="spotlight" alt="Image may contain: food" src="https://scontent-hkg3-1.xx.fbcdn.net/v/t1.0-9/52123695_2265052143513263_5634487103640305664_n.jpg?_nc_cat=103&amp;_nc_ht=scontent-hkg3-1.xx&amp;oh=c2b401a859d529c529960eef96a53e9d&amp;oe=5D6E93FA" style="width: 50%;" aria-busy="true">
-      <pre>쿠키빠 cookie bar 는요, 
+      <h1 style="text-align: center">쿠키빠</h1>
+      <img class="spotlight" alt="Image may contain: food" src="https://scontent-hkg3-1.xx.fbcdn.net/v/t1.0-9/52123695_2265052143513263_5634487103640305664_n.jpg?_nc_cat=103&amp;_nc_ht=scontent-hkg3-1.xx&amp;oh=c2b401a859d529c529960eef96a53e9d&amp;oe=5D6E93FA" style="width: 90%;">
+      <p><pre>쿠키빠 cookie bar 는요, 
 + 서울 디저트 페어에 출품해 모두 매진되었어요.
 + 100퍼센트 순수 동물성 버터와 바닐라빈만을 사용하며, 방부제나 
    색소, 인공조미료 등을 넣지 않아요.
@@ -21,8 +21,8 @@
 + 망원동 ‘마이클 식당’에서 가장 잘 팔리는 과자!
 + 로버트의 할머니가 구워 주셨던 미국 가정의 전통 레시피를 물려받아 
    만들어요. 쿠키 바의 다정하고 따뜻한 맛을 만나보세요!
-</pre>
-      <pre>
+</pre></p> 
+    <pre><p>
       쿠키빠 셰프 로버트는요,
  
 16살 때부터 요리를 시작해 20년 넘게 셰프로 일했답니다.
@@ -33,23 +33,17 @@
 사랑하는 아내의 나라 한국에 온 지금은,
 로버트의 특기인 쿠키빠 cookie bar를 비롯해 맛있고도 몸에 좋은
 미국 가정의 따뜻한 맛을 지닌 디저트를 만들고 있어요.
-</pre>
+</pre></p>
     </div>
   <div id="projects">
     <h2 class="project-tile">초코칩</h2>
-    <a class="p-links" href="https://codepen.io/RobertAnthony/full/GPZLem" target="_blank">
-      <img class="p-links" alt="No photo description available." aria-busy="false" src="https://scontent-hkg3-1.xx.fbcdn.net/v/t1.0-9/52293355_2266617630023381_7942637871796584448_n.jpg?_nc_cat=100&amp;_nc_ht=scontent-hkg3-1.xx&amp;oh=ecca171cb27d575257c8db1ffa34ed61&amp;oe=5D6B34D6" style="width: 100%;">
-    </a>
+      <img alt="No photo description available." aria-busy="false" src="https://scontent-hkg3-1.xx.fbcdn.net/v/t1.0-9/52293355_2266617630023381_7942637871796584448_n.jpg?_nc_cat=100&amp;_nc_ht=scontent-hkg3-1.xx&amp;oh=ecca171cb27d575257c8db1ffa34ed61&amp;oe=5D6B34D6" style="width: 100%;"><img class="spotlight" alt="Image may contain: food" aria-busy="false" src="https://scontent-hkg3-2.xx.fbcdn.net/v/t1.0-9/51860994_2264833133535164_5253530831699312640_n.jpg?_nc_cat=101&amp;_nc_ht=scontent-hkg3-2.xx&amp;oh=a57604198ade3bfd9d68380952686ee1&amp;oe=5D2B208C" style="width: 100%;">
     <p></p>
           <h2>화이트 초콜릿 캐러멜</h2>
-    <a class="p-links" href="https://codepen.io/RobertAnthony/full/OrXxEw" target="_blank">
       <img class="spotlight" alt="Image may contain: text" src="https://scontent-icn1-1.xx.fbcdn.net/v/t1.0-9/52109870_2266617073356770_3822342115426304000_n.jpg?_nc_cat=108&amp;_nc_ht=scontent-icn1-1.xx&amp;oh=cec58a55def0c9b303a9382909498047&amp;oe=5D759C7E" aria-busy="true" style="width: 100%;">
-    </a>
     <p></p>
     <h2>체리 치즈</h2>
-    <a class="p-links" href="https://codepen.io/RobertAnthony/full/JwoeNj" target="_blank">
       <img class="spotlight" alt="No photo description available." aria-busy="false" src="https://scontent-icn1-1.xx.fbcdn.net/v/t1.0-9/51720841_2266616313356846_2406966541024231424_n.jpg?_nc_cat=110&amp;_nc_ht=scontent-icn1-1.xx&amp;oh=e9a1f873e358e667506108831f7f9a9c&amp;oe=5D3DA68D" style="width: 100%;">
-    </a>
   </div>
   </div>
 </html>
@@ -57,8 +51,8 @@
   body {
     background-image: linear-gradient(cornsilk, maroon);
   }
-  a {
-    color: maroon;
+  pre {
+    font-size: 1.5em;
   }
   img {
     border-radius: 5px;
@@ -66,7 +60,6 @@
   }
   .flex-container {
     display: flex;
-    padding-left: 10%;
     margin-top: 3%;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -77,11 +70,12 @@
   }
   @media only screen and (max-width: 850px) {
     .flex-container {
-      margin-top: 5%;
+      margin-top: 7%;
     }
   }
   #welcome-section {
     min-height: 100vh;
+    margin-left: 5%;
   }
   #projects {
     margin-top: 1%;
